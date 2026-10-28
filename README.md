@@ -1,7 +1,9 @@
 # MyKrobe
 
-The "MyKrobe Soon" placeholder page for mykrobe.io, served by GitHub Pages.
+The mykrobe.io website (moved off Squarespace 2026-10-28), served by GitHub Pages at https://www.mykrobe.io.
+Plain HTML, no build: `index.html` (Home), `about/index.html` (About Me), `style.css`, pictures in `media/`.
+`home/` and `404.html` forward old links to the front page. `index` is the old "MyKrobe Soon" placeholder (not served).
 
-**How to run:** open `index` in a browser (it's a single HTML page; GitHub Pages serves it at mykrobe.io via `CNAME`).
+**How to run:** edit, commit, push; GitHub Pages updates in about a minute. Preview: `python3 -m http.server` here, open localhost:8000.
 
 More: see `~/MasterPlan/projects/vachies-repos.md`

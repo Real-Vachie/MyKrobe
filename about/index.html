@@ -5,6 +5,7 @@
 <meta name="description" content="The developer behind MyKrobe.">
 <meta property="og:title" content="Developer - About Me — MyKrobe">
 <meta charset="utf-8">
+<script>document.documentElement.classList.add("js")</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,7 +43,7 @@
 </main>
 <footer class="foot">
   <h3>Follow<br>MyKrobe</h3>
-  <div class="pics">
+  <div class="fade pics">
     <img src="/media/index.webp" alt="" loading="lazy">
     <img src="/media/Logo2-textonly.webp" alt="MyKrobe" loading="lazy">
     <img src="/media/poop1.gif" alt="" loading="lazy">
@@ -58,5 +59,10 @@
   <small>© MyKrobe</small>
 </footer>
 
+<script>
+// fade sections in as they scroll into view
+(function(){var els=document.querySelectorAll('.fade');if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});els.forEach(function(e){io.observe(e)})})();
+</script>
 </body>
 </html>
